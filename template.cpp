@@ -17,9 +17,24 @@ public:
     {
         return a + b;
     }
+    T2 subnumber()
+    {
+        return a - b;
+    }
+    T2 multinumber()
+    {
+        return a * b;
+    }
+    T2 dividenumber()
+    {
+        return a / b;
+    }
 };
 int main()
 {
     Number<int, float> n1(4, 7.3);
-    cout << n1.addnumber();
+    cout << n1.addnumber() << endl;
+    cout << n1.subnumber() << endl;
+    cout << n1.multinumber() << endl;
+    cout << n1.dividenumber() << endl;
 }
