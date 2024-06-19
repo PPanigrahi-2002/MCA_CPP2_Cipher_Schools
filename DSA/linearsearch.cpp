@@ -11,8 +11,11 @@ bool search(int arr[], int size, int key)
     }
     return false;
 }
+
+
 int main()
 {
     int arr[6] = {1, 2, 4, 5, 6, 7};
-    cout << search(arr, 6, 3);
+    cout << search(arr, 6, 3) << endl;
+    
 }
