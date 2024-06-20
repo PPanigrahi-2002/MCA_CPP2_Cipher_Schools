@@ -26,5 +26,4 @@ int main()
         11,
     };
     intersection(arr1, arr2, 6);
-    0
 }
