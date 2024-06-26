@@ -16,6 +16,18 @@ bool checkpalindrom(char arr[], int size)
     }
     return true;
 }
+char toLowerCase(char ch)
+{
+    if (ch >= 'a' && ch <= 'z')
+    {
+        return ch;
+    }
+    else
+    {
+        char temp = ch - 'A' + 'a';
+        return temp;
+    }
+}
 int main()
 {
     char arr[] = "naman";
