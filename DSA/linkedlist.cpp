@@ -81,7 +81,7 @@ int main()
     insertathead(head, 101);
     insertathead(head, 11);
     display(head);
-    cout << search(head, 11) << endl;
+    // cout << search(head, 11) << endl;
 
     deletion(head, 11);
     display(head);
