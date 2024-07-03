@@ -95,6 +95,18 @@ Node *getstartingNode(Node *head)
     }
     return slow;
 }
+void removeloop(Node *head)
+{
+    if (head == NULL)
+        return;
+    Node *startofloop = getstartingNode(head);
+    Node *temp = startofloop;
+    while (temp->next != startofloop)
+    {
+        temp = temp->next;
+    }
+    temp->next = NULL;
+}
 void print(Node *head)
 {
     Node *temp = head;
@@ -117,6 +129,7 @@ int main()
 
     floydDetectLoop(head);
     getstartingNode(head);
+    removeloop(head);
 
     // print(head);
 
