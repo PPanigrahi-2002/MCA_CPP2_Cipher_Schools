@@ -8,5 +8,6 @@ int main()
     st.push(9);
     st.push(3);
     st.pop();
-    st.top();
+    cout << st.top() << endl;
+    cout << st.empty();
 }
