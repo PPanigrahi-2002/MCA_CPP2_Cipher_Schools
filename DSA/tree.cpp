@@ -1,6 +1,6 @@
 // tree - a non linear data structure
 // Depth - number of edges between leaf to node
-// height = nuber of longest path between node and leaf
+// height = number of longest path between node and leaf
 // level 2^n;
 #include <iostream>
 using namespace std;
