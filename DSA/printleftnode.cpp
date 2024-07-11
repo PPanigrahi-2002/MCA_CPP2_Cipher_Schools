@@ -47,6 +47,35 @@ void rightview(Node *root)
         }
     }
 }
+void leftview(Node *root)
+{
+    if (root == NULL)
+        return;
+
+    queue<Node *> q;
+    q.push(root);
+    while (!q.empty())
+    {
+        int n = q.size();
+        for (int i = 0; i < n; i++)
+        {
+            Node *curr = q.front();
+            q.pop();
+            if (i == 0)
+            {
+                cout << curr->data << " ";
+            }
+            if (curr->left != NULL)
+            {
+                q.push(curr->left);
+            }
+            if (curr->right != NULL)
+            {
+                q.push(curr->right);
+            }
+        }
+    }
+}
 int main()
 {
     Node *root = new Node(1);
@@ -54,6 +83,6 @@ int main()
     root->right = new Node(3);
     root->left->left = new Node(4);
     root->left->right = new Node(5);
-    rightview(root);
+    leftview(root);
     return 0;
 }
