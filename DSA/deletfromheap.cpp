@@ -92,6 +92,16 @@ void heapify(int arr[], int n, int i)
         largest = right;
     }
 }
+void heapsort(int arr[], int n)
+{
+    int size = n;
+    while (size > 1)
+    {
+        swap(arr[size], arr[1]);
+        size--;
+        heapify(arr, n, 1);
+    }
+}
 int main()
 {
     heap h;
@@ -112,6 +122,12 @@ int main()
     {
         heapify(arr, n, i);
     }
+    // for (int i = 1; i <= n; i++)
+    //{
+    //     cout << arr[i] << " ";
+    // }
+    // cout << endl;
+    heapsort(arr, n);
     for (int i = 1; i <= n; i++)
     {
         cout << arr[i] << " ";
