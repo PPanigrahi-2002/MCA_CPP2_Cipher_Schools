@@ -4,6 +4,11 @@
 if not then swap with greater child
 4-> use 2*i to go to the left child and 2*i-1 to go to the right child
 */
+/*
+Heapify
+1-> in that nodes all n/2 -1 all are satisfy max heap
+2-> so we would be check tha value from n/2 -1 to 1.
+3-> check left and right value  if find then swift it.*/
 #include <iostream>
 using namespace std;
 class heap
